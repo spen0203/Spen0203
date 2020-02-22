@@ -1,2 +1,7 @@
 # spen0203
-Mu githubs pages website
+My githubs pages website
+
+Currently being Built up.
+
+
+* Made to use github pages limiting me to static pages *
