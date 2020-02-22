@@ -14,6 +14,18 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
         .headerImage {
             background-image: url("Images/computer-code.jpg");
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+
+
+            color: white;
+            text-shadow:
+            -2px -2px 0 #000,
+            2px -2px 0 #000,
+            -2px 2px 0 #000,
+            2px 2px 0 #000; 
         }
 
         .headerText {
@@ -26,11 +38,33 @@
         .card {
             margin-bottom:20px;
             text-align: center;
+            height: 35rem;
+            
         }
         .techJob {
-            background-color: yellow;
+            /* background-color: yellow; */
         }
-            
+        
+       
+        
+
+        .card-body {
+            max-height: 5rem;
+            width: 100%;
+            display: contents;
+        }
+            .card-body img {
+                max-height: 150px;
+            }
+            .table {
+                margin-left: -3rem;
+            }
+            .table td {
+                padding-right: 0em;
+            }
+            .workExperiences {
+                background-color: #343a40;
+            }
     </style>
     
     </head>
@@ -67,7 +101,7 @@
                         </li>
                         
                         <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
+                          <a class="nav-link" href="./Contact.html">Contact</a>
                         </li>
                       </ul>
                 </div>
@@ -78,12 +112,12 @@
         <div class="jumbotron jumbotron-fluid headerImage">
             <div class="container" >
                 <div class="row">
-                    <div class="col headerText" style="padding-top:1.5rem;">
-                        "The great myth of our times is that technology is communication." ~ Libby Larsen
+                    <div class="col headerText" style="padding-top:1.5rem; text-align: center;">
+                       <h5 style="text-align: left;">"It's not a faith in technology. It's faith in people." ~ Steve Jobs </h5> 
 
                     </div>
-                    <div class="col">
-                        <img src="Images/download.jpg" class="rounded-circle" style="float: center;"  width="130rem" height="130rem"/>      
+                    <div class="col " style="text-align: center;">
+                        <img src="Images/download.jpg" class="rounded-circle "    width="130rem" height="130rem"/>      
                     </div>
                 </div>
             </div>
@@ -95,8 +129,8 @@
             <h3>Profile</h3>
             <p>
                 Courteous and professional Computer Engineering Technology student
-                 with a background in providing effective troubleshooting solutions
-                  for PC hardware and software.
+                with a background in providing effective troubleshooting solutions
+                for PC hardware and software.
             </p>
         </div>
         <!-- End  About Me, Profile-->
@@ -117,93 +151,157 @@
                     <h3>Summary of Qualifications</h3>
                     <ul> 
                         <li>
-                            Several websites in development: winottawahouse.com , stopgaptpm.com, mcintoshrei.com/                      
+                            Experience Coding IOT devices such as Arduino and Teensy 3.2 taking advantage of mqtt protocol.                        <br/>
+                        <li>
+                            Knowledge on several aspects of website development, Marketing Funnels, Landing Pages, WebSites, Optimization, Conversions, SEO and Analytics.
                         </li>
                         <br/>
                         <li>
-                            Experience Coding IOT devices such as Arduino and Teensy 3.2 taking advantage of mqtt using Cayenne.
-                        </li>
+                            Hands on experience diagnosing, repairing, upgrading and building computer systems at Northern Business Equipment.                        </li>
                         <br/>
                         <li>
-                            Knowledge on several aspects of website development, Marketing Funnels, Landing Pages, WebSites, Optimization, Conversions and Analytics.
-                        </li>
-                        <br/>
-                        <li>
-                            Hands on experience diagnosing, repairing, upgrading and building computer systems at Northern Business Equipment.
-                        </li>
-                        <br/>
-                        <li>
-                            Reliable knowledge using SOAP and JMeter testing software to develop efficient reusable test cases.
+                            Reliable knowledge using SOAP and JMeter testing software to develop efficient test cases.
                         </li>
                         <br/>
                         <li>
                             Effective at reading System Use Cases and other development documents to both test and program.
+                        </li>
+                        <br/>
+                        <li>
+                            Understanding of fundamental Networking, Data Structures, Real Time and Compiler concepts.
                         </li> 
                         <br/>
                         <li>
-                            Ability to produce quality programming using Java , XML , HTML, C, C#, C++ , JavaScript, Vue , .Net and SQL.
+                            Ability to produce quality programming using Java , XML , HTML, C, C#, C++ , JavaScript, Vue , .Net, Ruby on Rails, and SQL.
                         </li> 
                         <br/>
                         <li>
-                            Over four years of customer assistance in retail.
+                            Knowledge of Windows and Linux computers using command line interfaces.
                         </li> 
                         <br/>
                         <li>
-                            Strong knowledge of Windows and Linux computers and command line interfaces.
+                            Experience working with a small team using tools such as Azure Dev Ops to organize tasks and Git for version control.
                         </li> 
                         <br/>
-                        <li>
-                            Current market product knowledge that allow the ability to communicate ideas in a professional manner.
-                        </li> 
-                        <br/>
+                        
                         <li>
                             Use my time management skills in combination with extreme care to ensure all tasks are completed on time.
                         </li> 
                         <br/>
-                        <li>
-                            Experience working with a close knit team using tools such as Azure Dev Ops to organize tasks and Git for version control.
-                        </li> 
-                        <br/>
-
-                        
+                                                
                     </ul>
 
+                    <h3>Certifications</h3>
+                    
+                    <ul>
                         
+                        <li>CannSell - Standard</li>
+                        <p>"The only way to legally and responsibly sell cannabis in Ontario." </p>
+                       <br/> 
+                       <li>safeTALK</li>
+                        <p>"LivingWorks safeTALK trainees learn to recognize when someone is thinking about suicide and connect them to an intervention provider" </p>
+                        <br />
+                    </ul>
 
                   </div>
 
 
 
-                  <div class="col-sm-8" style="border-left: 2px solid black; border-top: 2px solid black;" >
-                    <br><h3>Work Experience</h3><br>
+                  <div class="col-sm-8 workExperiences" style="border-left: 2px solid #7a7e82; border-top: 2px solid #1b3e61;" >
+                    <br><h3 style="color:white;">Tech Work</h3><br>
 
                         <div class="row">
-                            <div class="col-sm-6">
-                            <div class="card techJob">             
-                                <div class="card-body">
-                                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                            <div class="col-sm-12">
+                            <div class="card techJob" style="height: auto;" >             
+                                <div class="card-body" style="height:325px; width:100%;  ">
+                                    <img src="Images/mcintosh.png" class="img-responsive" style="width:100%; max-height: 300px;" alt="Image">
+                                    <br/>
                                 </div>
                                 <div class="card-footer">
                                     <b><u> Website Development </u></b>
                                     <p>McintoshREI</p>
                                     <ul style="text-align: left;">
-                                        <li>
-                                            Developed Multiple Websites using HTML, CSS, JavaScript
-                                        </li>
+                                        
                                         <li>
                                             Worked Remotely with frequent updates to the client    
                                         </li>
                                         <li>
                                             Started a hybrid app that implements Firebase and Vue.js
                                         </li>
+                                        <li>
+                                            Developed multiple websites that leverage different langauges and Tools.
+                                        </li>
+                                        <table class="table">
+                                            <tr>
+                                                <th>
+                                                    Website:
+                                                </th>
+                                                <th>
+                                                    Details:
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://mcintoshrei.com/">McintoshREI.com</a>
+                                                </td>
+                                                <td>
+                                                    <p>Landing Page, <br/><b>Implements:</b>  HTML , CSS</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://stopgaptpm.com/">StopGapTpm.com</a>
+                                                </td>
+                                                <td>
+                                                    Landing Page, <br/><b>Implements:</b> HTML , CSS, PHP & Sendgrid 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://www.flippingforcash.com/optin">FlippingForCash.com</a>
+                                                </td>
+                                                <td>
+                                                    Marketing Funnel, <br/><b>Implements:</b> ClickFunnels, Sendgrid, Html, CSS, JavaScript, PHP
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://ottawadiscounthouses.com/">OttawaDiscount<br>Houses.com</a>
+                                                </td>
+                                                <td>
+                                                    Landing Page, <br/><b>Implements:</b> HTML , CSS, PHP & Sendgrid 
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="https://winottawahouse.com/">WinOttawaHouse.com</a>
+                                                </td>
+                                                <td>
+                                                    Closed, <br/><b>Implements:</b> HTML, CSS, PHP, JotForm, Incentive Program
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                   <a href="https://2286bowmanroad.com/">2286BowmanRoad.com</a>
+                                                </td>
+                                                <td>
+                                                    Real Estate, <br/><b>Implements:</b> HTML, CSS, PHP, JavaScript
+                                                </td>
+                                            </tr>
+                                        </table>
+
+
                                     </ul>
                                 </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6"> 
+                            
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6"> 
                             <div class="card techJob">             
                                 <div class="card-body">
-                                    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                                    <img src="Images/CBSA.png" class="img-responsive" style="max-width: 100%;" alt="Image">
                                 </div>
                                 <div class="card-footer">
                                     <b><u> Junior Programmer Analyst </u></b>
@@ -220,61 +318,61 @@
                                         </li>
                                     </ul>
                                 </div>
-                                </div>    
+                            </div>    
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-sm-6">
                           <div class="card techJob">             
                               <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                                  <img src="Images/nbe.jpg" class="img-responsive" style="max-width:100%" alt="Image">
                               </div>
                               <div class="card-footer ">
                                 <b><u> Computer Technician - Coop </u></b>
                                 <p>Northern Business Equipment</p>
                                 <ul style="text-align: left;">
                                     <li>
-                                        Built and refurbished computers.
+                                        Built and refurbished computers to be sold to consumers.
                                     </li>
                                     <li>
                                         Diagnosed and fixed both software and hardware computer issues.    
                                     </li>
                                     <li>
-                                        Assisted with off location service calls.
+                                        Assisted with off location service calls to get the most experience.
                                     </li>
                                 </ul>
                               </div>
                             </div>
                         </div>
-                        <div class="col-sm-6"> 
-                          <div class="card">             
-                              <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                              </div>
-                              <div class="card-footer">
-                                <b><u> Cannista </u></b>
-                                <p>Fire & Flower</p>
-                                <ul style="text-align: left;">
-                                    <li>
-                                        Taught consumers about the effects of cannabis
-                                    </li>
-                                    <li>
-                                        Ensured all customers were a legal age    
-                                    </li>
-                                    <li>
-                                        Curated cannabis to customers requirements
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>    
-                      </div>
+                        
                       
                     </div>
+                    <h3 style="color:white;">Non Tech Work</h3>
                     <div class="row">
+                        <div class="col-sm-6"> 
+                            <div class="card">             
+                                <div class="card-body">
+                                    <img src="Images/faf.png" class="img-responsive" style="width:100%" alt="Image">
+                                </div>
+                                <div class="card-footer">
+                                  <b><u> Cannista </u></b>
+                                  <p>Fire & Flower</p>
+                                  <ul style="text-align: left;">
+                                      <li>
+                                          Taught consumers about terpenes and the effects of different types of cannabis consumption.
+                                      </li>
+                                      <li>
+                                          Ensured all customers were a legal age and understood the laws regarding cannabis.
+                                      </li>
+                                      <li>
+                                          Curated cannabis to best meet customers requirements in a newly developed market.
+                                      </li>
+                                  </ul>
+                                </div>
+                              </div>    
+                        </div>
                         <div class="col-sm-6">
                           <div class="card">             
                               <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                                  <img src="Images/StarMotors.png" class="img-responsive" style="width:100%" alt="Image">
                               </div>
                               <div class="card-footer">
                                 <b><u> Lot Attendant </u></b>
@@ -293,34 +391,35 @@
                               </div>
                             </div>
                         </div>
-                        <div class="col-sm-6"> 
-                          <div class="card">             
-                              <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                              </div>
-                              <div class="card-footer">
-                                <b><u> Bike Courier </u></b>
-                                <p>UberEats</p>
-                                <ul style="text-align: left;">
-                                    <li>
-                                        Picked up and confirmed the order was correct.
-                                    </li>
-                                    <li>
-                                        Delivered food safely through city traffic.    
-                                    </li>
-                                    <li>
-                                        Dropped of undamaged food to customers.
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>    
-                      </div>
+                        
                       </div>
                       <div class="row">
+                        <div class="col-sm-6"> 
+                            <div class="card">             
+                                <div class="card-body">
+                                    <img src="Images/ubereats.jpg" class="img-responsive" style="width:100%" alt="Image">
+                                </div>
+                                <div class="card-footer">
+                                  <b><u> Bike Courier </u></b>
+                                  <p>UberEats</p>
+                                  <ul style="text-align: left;">
+                                      <li>
+                                          Picked up and confirmed the order was correct.
+                                      </li>
+                                      <li>
+                                          Delivered food safely through city traffic.    
+                                      </li>
+                                      <li>
+                                          Dropped of undamaged food to customers.
+                                      </li>
+                                  </ul>
+                                </div>
+                            </div>    
+                          </div>
                         <div class="col-sm-6">
                           <div class="card">             
                               <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                                  <img src="Images/loblaws.png" class="img-responsive" style="width:100%" alt="Image">
                               </div>
                               <div class="card-footer">
                                 <b><u> Meat Clerk </u></b>
@@ -339,34 +438,13 @@
                               </div>
                             </div>
                         </div>
-                        <div class="col-sm-6"> 
-                          <div class="card">             
-                              <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-                              </div>
-                              <div class="card-footer">
-                                <b><u> Meat Clerk </u></b>
-                                <p>Coldwater Foodland</p>
-                                <ul style="text-align: left;">
-                                    <li>
-                                        Cleaned department and machines before and after use.
-                                    </li>
-                                    <li>
-                                        Provided Customers with product support.   
-                                    </li>
-                                    <li>
-                                        Prepared meat for customers.
-                                    </li>
-                                </ul>
-                              </div>
-                            </div>    
-                      </div>
+                        
                       </div>
                       <div class="row">
                         <div class="col-sm-6">
                           <div class="card">             
                               <div class="card-body">
-                                  <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                                  <img src="Images/mslm.png" class="img-responsive" style="width:100%" alt="Image">
                               </div>
                               <div class="card-footer">
                                 <b><u> Lift Operations </u></b>
@@ -384,8 +462,29 @@
                                 </ul>
                               </div>
                             </div>
+                        </div><!-- end col -->
+                        <div class="col-sm-6"> 
+                            <div class="card">             
+                                <div class="card-body">
+                                    <img src="Images/foodland-logo.png" class="img-responsive" style="width:100%" alt="Image">
+                                </div>
+                                <div class="card-footer">
+                                  <b><u> Meat Clerk </u></b>
+                                  <p>Coldwater Foodland</p>
+                                  <ul style="text-align: left;">
+                                      <li>
+                                          Cleaned department and machines before and after use.
+                                      </li>
+                                      <li>
+                                          Provided Customers with product support.   
+                                      </li>
+                                      <li>
+                                          Prepared meat for customers.
+                                      </li>
+                                  </ul>
+                                </div>
+                              </div>    
                         </div>
-                        
                       </div>
                   </div>
             </div>
